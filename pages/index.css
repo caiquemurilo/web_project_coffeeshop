@@ -17,9 +17,6 @@
   max-height: 800px;
   height: 100vh;
   position: relative;
-  z-index: -5;
-  display: flex;
-  flex-direction: column;
 }
 .nav {
   display: flex;
@@ -54,7 +51,6 @@
   max-width: 709px;
   padding-top: 183px;
   padding-left: 80px;
-  /* deixei a abordagem acima para espaçar a partir do elemento logo */
 }
 
 .header__span-accent {
@@ -94,15 +90,8 @@
   right: 5px;
   width: 646px;
   height: 568px;
-  z-index: -1;
 }
-.header__footer {
-  display: flex;
-  margin: 0;
-  margin-top: auto;
-  justify-content: space-between;
-  border: solid 3px red;
-}
+
 .header__paragraph {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
@@ -114,18 +103,16 @@
 }
 
 .header__paragraph_type-time {
-  padding-bottom: 40px;
-  padding-left: 80px;
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
 }
 
 .header__paragraph_type-address {
-  /* bottom: 40px;
-  right: 80px;  */
-  padding-bottom: 40px;
-  padding-right: 80px;
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
 }
-
-/* dúvida nos passos 9 e 10-13 da section acima */
 
 .recipes {
   background-color: #0a2750;
@@ -133,26 +120,40 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
 }
 .recipes__title {
-  position: relative;
-  /* deixei position relative para a box debaixo poder se distanciar a partir dessa box */
-  top: 100px;
-  left: 80px;
+  padding-top: 100px;
+  padding-left: 80px;
   max-width: 580px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #fff;
 }
 .recipes__subtitle {
-  padding-top: 24px;
+  margin-top: 24px;
+  padding-left: 80px;
+  max-width: 438px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
 }
 .recipes__videos {
+  margin-top: 80px;
+  padding-bottom: 215px;
   display: flex;
   justify-content: center;
   gap: 40px;
+  align-self: center;
 }
-.recipes__video-item {
-  border: solid 3px red;
-}
+
 .recipes__iframe {
   border: none;
   width: 480px;
@@ -163,4 +164,10 @@
   width: 480px;
   display: flex;
   justify-content: space-between;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
 }
