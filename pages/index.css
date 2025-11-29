@@ -6,3 +6,161 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.header {
+  background-color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
+  z-index: -5;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  display: flex;
+}
+
+.nav__logo {
+  position: relative;
+  /* deixei relative para poder continuar no fluxo normal e permitir dar espaçamento nas boxes de baixo */
+  top: 30px;
+  left: 30px;
+  width: 105px;
+  height: 39px;
+}
+.nav__links {
+  display: flex;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-right: 80px;
+  gap: 20px;
+  list-style-type: none;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+.header__title {
+  max-width: 709px;
+  padding-top: 183px;
+  padding-left: 80px;
+  /* deixei a abordagem acima para espaçar a partir do elemento logo */
+}
+
+.header__span-accent {
+  color: #2f80ed;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+}
+
+.header__span-accent_break-line {
+  display: block;
+}
+.header__title-line-2 {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+.header__description {
+  padding-top: 28px;
+  padding-left: 80px;
+  max-width: 683px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+  z-index: -1;
+}
+.header__footer {
+  display: flex;
+  margin: 0;
+  margin-top: auto;
+  justify-content: space-between;
+  border: solid 3px red;
+}
+.header__paragraph {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+
+.header__paragraph_type-time {
+  padding-bottom: 40px;
+  padding-left: 80px;
+}
+
+.header__paragraph_type-address {
+  /* bottom: 40px;
+  right: 80px;  */
+  padding-bottom: 40px;
+  padding-right: 80px;
+}
+
+/* dúvida nos passos 9 e 10-13 da section acima */
+
+.recipes {
+  background-color: #0a2750;
+  background-image: url(../images/background_recipes.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* position: relative; */
+}
+.recipes__title {
+  position: relative;
+  /* deixei position relative para a box debaixo poder se distanciar a partir dessa box */
+  top: 100px;
+  left: 80px;
+  max-width: 580px;
+}
+.recipes__subtitle {
+  padding-top: 24px;
+}
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.recipes__video-item {
+  border: solid 3px red;
+}
+.recipes__iframe {
+  border: none;
+  width: 480px;
+  height: 273px;
+}
+.videocaption {
+  margin-top: 24px;
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
