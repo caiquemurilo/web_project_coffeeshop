@@ -107,7 +107,71 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form action="#" class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Nome *</label>
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nome"
+                required
+              />
+              <label class="form__label" for="guest-count"
+                >Número de convidados *</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                name="guest-count"
+                id="guest-count"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <label class="form__label" for="reservation-date"
+                >Data e hora *</label
+              >
+              <input
+                class="form__input"
+                type="datetime-local"
+                name="reservation-date"
+                id="reservation-date"
+                required
+              />
+              <label class="form__label" for="email">Seu e-mail *</label>
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+              <button type="submit" class="form__button">
+                Reservar uma mesa
+              </button>
+
+              <label
+                class="form__label form__label_type_checkbox"
+                for="agreement"
+              >
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="agreement"
+                  id="agreement"
+                  required
+                />
+                Eu concordo com os termos de uso</label
+              >
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
