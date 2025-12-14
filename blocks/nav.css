@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+}
+
+.nav__logo {
+  position: relative;
+  /* deixei relative para poder continuar no fluxo normal e permitir dar espaçamento nas boxes de baixo */
+  top: 30px;
+  left: 30px;
+  width: 105px;
+  height: 39px;
+}
+.nav__links {
+  display: flex;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-right: 80px;
+  gap: 20px;
+  list-style-type: none;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.reservation__title {
+  margin: 0 auto 80px auto;
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  /* testando colocar margens aqui ao invés de centralizar o título apenas com text-align center, mas sabendo que as margens horizontais aqui estão sendo inúteis, visto que para funcionarem eu precisaria definir um tamanho de 385px de max-width, e isso faria quebrar a linha, ficando diferente do modelo */
+}
+.reservation__form {
+  /* as margens vão aqui */
+  /* retirei o margin-top porque o teste exigiu o margin-bottom no reservation__title */
+  margin: 0 auto;
+}
